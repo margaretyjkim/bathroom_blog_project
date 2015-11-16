@@ -1,0 +1,17 @@
+<%= form_for :article, url: articles_path do |f| %>
+	<p>
+	<%= f.label :title %><br>
+	<%= f.text_field :title, :placeholder => "Headline of your blurb" %>
+	</p>
+
+	<p>
+	<%= f.label :text %><br>
+	<%= f.text_field :text, :placeholder => "Elaborate your thoughts" %>
+	</p>
+
+	<p>
+	<%= f.submit %>
+	</p>
+
+<% end %>
+
