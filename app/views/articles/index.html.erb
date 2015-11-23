@@ -1,0 +1,16 @@
+<h1>Listing Silly Thoughts and Comments</h1>
+<%= link_to 'New Bathroom Thoughts', new_article_path %>
+
+<table>
+	<tr>
+		<th>Headline</th>
+		<th>Message</th>
+	</tr>
+
+	<% @articles.each do |article| %>
+		<tr>
+			<td> <%= article.title %></td>
+			<td> <%= article.text %></td>
+		</tr>
+	<% end %>
+</table>
